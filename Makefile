@@ -81,5 +81,5 @@ test:
 run-dev:
 	@( \
 		. .venv/bin/activate; \
-		python src/demo/main.py \
+		python -m flask --app src/demo/main.py run \
 	)
