@@ -67,5 +67,11 @@ def create_app():
 app = create_app()
 
 
+def parser(data = {}):
+    return {}
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
