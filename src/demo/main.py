@@ -68,7 +68,13 @@ app = create_app()
 
 
 def parser(data = {}):
-    return {}
+    d = data.get("data", {})[0]
+    ret_dict = {
+        "id": d.get("id", -1),
+        "name": d.get("name", ""),
+        "price": d.get("price", ""),
+    }
+    return ret_dict
 
 
 
