@@ -56,6 +56,6 @@ class TestMain:
         assert parser(DATA) == {
             "id": "90",
             "name": "Bitcoin",
-            "price": "67685.02",
+            "price": "67685.02",  # TODO: convert to USD + comma's.
             "at": datetime.fromtimestamp(1710780122).isoformat(),
         }
